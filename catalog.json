@@ -977,46 +977,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/mealie/icons/icon.png"
         },
-        "audiobookshelf": {
-            "app_readme": "<h1>Audiobookshelf</h1>\n<p><a href=\"https://www.audiobookshelf.org/\">Audiobookshelf</a> is a self-hosted audiobook and podcast server.</p>\n<blockquote>\n<p>The following applies only when the storage type is set to <strong>ixVolume</strong>\nWhen application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Audiobookshelf</code> directories.\nAfterward, the <code>Audiobookshelf</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media"
-            ],
-            "description": "Audiobookshelf is a self-hosted audiobook and podcast server",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.audiobookshelf.org/",
-            "location": "/__w/charts/charts/community/audiobookshelf",
-            "latest_version": "1.0.12",
-            "latest_app_version": "2.13.3",
-            "latest_human_version": "2.13.3_1.0.12",
-            "last_update": "2024-09-03 06:00:18",
-            "name": "audiobookshelf",
-            "recommended": false,
-            "title": "Audiobookshelf",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "audiobook"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/audiobookshelf/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/audiobookshelf/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/audiobookshelf/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/audiobookshelf/screenshots/screenshot4.jpg"
-            ],
-            "sources": [
-                "https://ghcr.io/advplyr/audiobookshelf",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/audiobookshelf",
-                "https://github.com/advplyr/audiobookshelf"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/audiobookshelf/icons/icon.svg"
-        },
         "immich": {
             "app_readme": "<h1>Immich</h1>\n<p><a href=\"https://immich.app\">Immich</a> - Self-hosted backup solution for photos and videos on mobile device</p>",
             "categories": [
