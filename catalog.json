@@ -1914,41 +1914,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/overseerr/icons/icon.svg"
         },
-        "clamav": {
-            "app_readme": "<h1>ClamAV</h1>\n<p><a href=\"https://www.clamav.net/\">ClamAV</a> - ClamAV\u00ae is an open-source antivirus engine for detecting trojans, viruses, malware &amp; other malicious threats.</p>\n<ul>\n<li>App runs as <code>root</code> user</li>\n</ul>",
-            "categories": [
-                "security"
-            ],
-            "description": "ClamAV is an open source (GPLv2) anti-virus toolkit.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.clamav.net/",
-            "location": "/__w/charts/charts/community/clamav",
-            "latest_version": "1.0.21",
-            "latest_app_version": "1.0.1",
-            "latest_human_version": "1.0.1_1.0.21",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "clamav",
-            "recommended": false,
-            "title": "Clam AV",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "anti-virus"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://docs.clamav.net/",
-                "https://github.com/truenas/charts/tree/master/community/clamav",
-                "https://www.clamav.net/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/clamav/icons/icon.png"
-        },
         "planka": {
             "app_readme": "<h1>Planka</h1>\n<p><a href=\"https://github.com/plankanban/planka\">Planka</a> is an Elegant open source project tracking</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Planka</code> directories.\nAfterward, the <code>Planka</code> container will run as a <strong>non</strong>-root user (<code>1000</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
             "categories": [
@@ -2450,43 +2415,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/plex-auto-languages/icons/icon.svg"
         },
-        "vaultwarden": {
-            "app_readme": "<h1>Vaultwarden</h1>\n<p><a href=\"https://github.com/dani-garcia/vaultwarden\">Vaultwarden</a> Alternative implementation of the <code>Bitwarden</code> server API written in Rust and compatible with upstream Bitwarden clients</p>\n<blockquote>\n<p>During the installation process, a container will be launched with <strong>root</strong> privileges. This is required\nin order to apply the correct permissions to the <code>Vaultwarden</code> data directory. Afterward, the <code>Vaultwarden</code> container\nwill run as a <strong>non</strong>-root user (default <code>568</code>).\nSame applies to the <code>postgres</code> container. This will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>Vaultwarden</code> and <code>postgres</code> data directories.</p>\n</blockquote>\n<p>While the option to use <code>Rocket</code> for TLS is there, it is not\n<a href=\"https://github.com/dani-garcia/vaultwarden/wiki/Enabling-HTTPS#via-rocket\">recommended</a>.\nInstead, use a reverse proxy to handle TLS termination.</p>\n<p>Using <code>HTTPS</code> is <strong>required</strong> for the most of the features to work (correctly).</p>",
-            "categories": [
-                "security"
-            ],
-            "description": "Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/dani-garcia/vaultwarden",
-            "location": "/__w/charts/charts/community/vaultwarden",
-            "latest_version": "1.1.14",
-            "latest_app_version": "1.32.0",
-            "latest_human_version": "1.32.0_1.1.14",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "vaultwarden",
-            "recommended": false,
-            "title": "Vaultwarden",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "password",
-                "manager"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/vaultwarden/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://github.com/dani-garcia/vaultwarden",
-                "https://github.com/truenas/charts/tree/master/community/vaultwarden"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/vaultwarden/icons/icon.png"
-        },
         "lidarr": {
             "app_readme": "<h1>Lidarr</h1>\n<p><a href=\"https://github.com/Lidarr/Lidarr\">Lidarr</a> is a music collection manager for Usenet and BitTorrent users.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Lidarr</code> directories.\nAfterward, the <code>Lidarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
             "categories": [
@@ -2789,85 +2717,6 @@
                 "https://hub.docker.com/r/jlesage/handbrake"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/handbrake/icons/icon.png"
-        },
-        "twofactor-auth": {
-            "app_readme": "<h1>2FAuth</h1>\n<p><a href=\"https://docs.2fauth.app/\">2FAuth</a> is a web based self-hosted alternative to One Time Passcode (OTP) generators like Google Authenticator, designed for both mobile and desktop.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>2FAuth</code> directories.\nAfterward, the <code>2FAuth</code> container will run as a <strong>non</strong>-root user (<code>1000</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "security"
-            ],
-            "description": "2FAuth is a web based self-hosted alternative to One Time Passcode (OTP) generators like Google Authenticator, designed for both mobile and desktop.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://docs.2fauth.app/",
-            "location": "/__w/charts/charts/community/twofactor-auth",
-            "latest_version": "1.2.7",
-            "latest_app_version": "5.2.0",
-            "latest_human_version": "5.2.0_1.2.7",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "twofactor-auth",
-            "recommended": false,
-            "title": "2FAuth",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "2fa",
-                "otp"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/twofactor-auth/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://github.com/Bubka/2FAuth",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/2fauth",
-                "https://hub.docker.com/r/2fauth/2fauth/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/twofactor-auth/icons/icon.png"
-        },
-        "passbolt": {
-            "app_readme": "<h1>Passbolt</h1>\n<p><a href=\"https://www.passbolt.com\">Passbolt</a> is a security-first, open source password manager</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Passbolt</code> directories.\nAfterward, the <code>Passbolt</code> container will run as a <strong>non</strong>-root user (<code>33</code>).\nSame applies to the <code>mariadb</code> container. This will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>mariadb</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>Passbolt</code> and <code>mariadb</code> data directories.</p>\n</blockquote>\n<h2>Register admin user</h2>\n<p>Connect to the container's shell and run the following command replacing the\nvalues (<code>user@example.com</code>, <code>first_name</code>, <code>last_name</code>) with your own values.</p>\n<p><code>shell\n/usr/share/php/passbolt/bin/cake passbolt register_user -r admin \\\n  -u user@example.com -f first_name -l last_name</code></p>",
-            "categories": [
-                "security"
-            ],
-            "description": "Passbolt is a security-first, open source password manager",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.passbolt.com",
-            "location": "/__w/charts/charts/community/passbolt",
-            "latest_version": "1.2.12",
-            "latest_app_version": "4.9.1.1",
-            "latest_human_version": "4.9.1.1_1.2.12",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "passbolt",
-            "recommended": false,
-            "title": "Passbolt",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "password",
-                "manager"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/passbolt/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/passbolt/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/passbolt/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/passbolt/screenshots/screenshot4.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/passbolt/passbolt",
-                "https://github.com/truenas/charts/tree/master/community/passbolt",
-                "https://www.passbolt.com"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/passbolt/icon/icon.svg"
         },
         "logseq": {
             "app_readme": "<h1>Logseq</h1>\n<p><a href=\"https://logseq.com/\">Logseq</a> is a privacy-first, open-source platform for knowledge management and collaboration.</p>\n<p>HTTPS is <strong>required</strong> in order to use Logseq.</p>\n<p>Either by using the Certificate selection or with an external reverse proxy.</p>",
@@ -3178,45 +3027,6 @@
                 "https://github.com/grafana"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/grafana/icons/icon.png"
-        },
-        "frigate": {
-            "app_readme": "<h1>Frigate</h1>\n<p><a href=\"https://github.com/blakeblackshear/frigate\">Frigate</a> is an NVR With Realtime Object Detection for IP Cameras</p>\n<blockquote>\n<p>Note: <strong>m.2</strong> Coral TPU devices is not supported.</p>\n</blockquote>",
-            "categories": [
-                "security"
-            ],
-            "description": "Frigate is an NVR With Realtime Object Detection for IP Cameras",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/blakeblackshear/frigate",
-            "location": "/__w/charts/charts/community/frigate",
-            "latest_version": "1.2.8",
-            "latest_app_version": "0.14.1",
-            "latest_human_version": "0.14.1_1.2.8",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "frigate",
-            "recommended": false,
-            "title": "Frigate",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "camera",
-                "nvr"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/frigate/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/frigate/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/frigate/screenshots/screenshot3.png"
-            ],
-            "sources": [
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/frigate",
-                "https://github.com/blakeblackshear/frigate"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/frigate/icons/icon.svg"
         },
         "organizr": {
             "app_readme": "<h1>Organizr</h1>\n<p><a href=\"https://docs.organizr.app/\">Organizr</a> is a HTPC/Homelab Services Organizer - Written in PHP</p>",
