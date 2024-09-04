@@ -1914,46 +1914,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/overseerr/icons/icon.svg"
         },
-        "filebrowser": {
-            "app_readme": "<h1>Filebrowser</h1>\n<p><a href=\"https://filebrowser.org\">Filebrowser</a> provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Filebrowser</code> directories.\nAfterward, the <code>Filebrowser</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>\n<p>You can configure further the settings by using Environment Variables.\nSee <a href=\"https://filebrowser.org/cli/filebrowser\">Filebrowser Documentation</a> for more information.\nUse the format <code>FB_OPTION_NAME</code> where the option name is the name of the option you want to set.</p>\n<p>You can also edit the configuration file <code>/config/filebrowser.json</code>.</p>\n<p>Note that the following options are already set and will always take precedence\nover the environment variables and the configuration file:</p>\n<ul>\n<li><code>FB_ROOT</code>/<code>--root</code> is set to <code>/data</code> (Any additional volume mounted will be under this directory)</li>\n<li><code>FB_PORT</code>/<code>--port</code> is set to <code>30044</code> (Or the port you configured in the installation wizard)</li>\n<li><code>FB_ADDRESS</code>/<code>--address</code> is set to <code>0.0.0.0</code> (It will listen on all interfaces <strong>inside</strong> the container)</li>\n<li><code>FB_DATABASE</code>/<code>--database</code> is set to <code>/config/filebrowser.db</code></li>\n<li><code>FB_CONFIG</code>/<code>--config</code> is set to <code>/config/filebrowser.json</code></li>\n</ul>\n<p>Also when a certificate is selected</p>\n<ul>\n<li><code>FB_CERT</code>/<code>--cert</code> is set to <code>/config/certs/tls.crt</code></li>\n<li><code>FB_KEY</code>/<code>--key</code> is set to <code>/config/certs/tls.key</code></li>\n</ul>",
-            "categories": [
-                "storage"
-            ],
-            "description": "File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://filebrowser.org",
-            "location": "/__w/charts/charts/community/filebrowser",
-            "latest_version": "1.2.11",
-            "latest_app_version": "2.31.1",
-            "latest_human_version": "2.31.1_1.2.11",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "filebrowser",
-            "recommended": false,
-            "title": "File Browser",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "files",
-                "browser"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/filebrowser/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/filebrowser/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/filebrowser/screenshots/screenshot3.png"
-            ],
-            "sources": [
-                "https://github.com/filebrowser/filebrowser",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/filebrowser",
-                "https://hub.docker.com/r/filebrowser/filebrowser"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/filebrowser/icons/icon.png"
-        },
         "clamav": {
             "app_readme": "<h1>ClamAV</h1>\n<p><a href=\"https://www.clamav.net/\">ClamAV</a> - ClamAV\u00ae is an open-source antivirus engine for detecting trojans, viruses, malware &amp; other malicious threats.</p>\n<ul>\n<li>App runs as <code>root</code> user</li>\n</ul>",
             "categories": [
@@ -1988,42 +1948,6 @@
                 "https://www.clamav.net/"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/clamav/icons/icon.png"
-        },
-        "unifi-protect-backup": {
-            "app_readme": "<h1>Unifi Protect Backup</h1>\n<p><a href=\"https://github.com/ep1cman/unifi-protect-backup\">Unifi Protect Backup</a> is a python based tool for backing up UniFi Protect event clips as they occur.</p>",
-            "categories": [
-                "storage"
-            ],
-            "description": "Unifi Protect Backup is a python based tool for backing up UniFi Protect event clips as they occur.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/ep1cman/unifi-protect-backup",
-            "location": "/__w/charts/charts/community/unifi-protect-backup",
-            "latest_version": "1.2.9",
-            "latest_app_version": "0.11.0",
-            "latest_human_version": "0.11.0_1.2.9",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "unifi-protect-backup",
-            "recommended": false,
-            "title": "Unifi Protect Backup",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "backup",
-                "unifi-protect"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/ep1cman/unifi-protect-backup",
-                "https://github.com/truenas/charts/tree/master/community/unifi-protect-backup",
-                "https://github.com/ep1cman/unifi-protect-backup/pkgs/container/unifi-protect-backup/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/unifi-protect-backup/icons/icon.svg"
         },
         "planka": {
             "app_readme": "<h1>Planka</h1>\n<p><a href=\"https://github.com/plankanban/planka\">Planka</a> is an Elegant open source project tracking</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Planka</code> directories.\nAfterward, the <code>Planka</code> container will run as a <strong>non</strong>-root user (<code>1000</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
@@ -2904,42 +2828,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/twofactor-auth/icons/icon.png"
         },
-        "rsyncd": {
-            "app_readme": "<h1>Rsyncd</h1>\n<p><a href=\"https://rsync.samba.org/\">Rsyncd</a> is an open source utility that provides fast incremental file transfer.</p>",
-            "categories": [
-                "storage"
-            ],
-            "description": "Rsync is an open source utility that provides fast incremental file transfer.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/truenas/containers/tree/main/apps/rsyncd",
-            "location": "/__w/charts/charts/community/rsyncd",
-            "latest_version": "1.0.16",
-            "latest_app_version": "1.0.0",
-            "latest_human_version": "1.0.0_1.0.16",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "rsyncd",
-            "recommended": false,
-            "title": "Rsync Daemon",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "sync",
-                "file transfer"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/truenas/containers/tree/main/apps/rsyncd",
-                "https://github.com/truenas/charts/tree/master/community/rsyncd",
-                "https://hub.docker.com/r/ixsystems/rsyncd"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/rsyncd/icons/icon.png"
-        },
         "passbolt": {
             "app_readme": "<h1>Passbolt</h1>\n<p><a href=\"https://www.passbolt.com\">Passbolt</a> is a security-first, open source password manager</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Passbolt</code> directories.\nAfterward, the <code>Passbolt</code> container will run as a <strong>non</strong>-root user (<code>33</code>).\nSame applies to the <code>mariadb</code> container. This will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>mariadb</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>Passbolt</code> and <code>mariadb</code> data directories.</p>\n</blockquote>\n<h2>Register admin user</h2>\n<p>Connect to the container's shell and run the following command replacing the\nvalues (<code>user@example.com</code>, <code>first_name</code>, <code>last_name</code>) with your own values.</p>\n<p><code>shell\n/usr/share/php/passbolt/bin/cake passbolt register_user -r admin \\\n  -u user@example.com -f first_name -l last_name</code></p>",
             "categories": [
@@ -3093,45 +2981,6 @@
                 "https://github.com/firefly-iii/firefly-iii"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/firefly-iii/icons/icon.png"
-        },
-        "ipfs": {
-            "app_readme": "<h1>IPFS</h1>\n<p><a href=\"https://ipfs.tech\">Interplanetary Filesystem</a> - the Web3 standard for content-addressing, interoperable with HTTP</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the ipfs directories.\nAfterward, the <code>ipfs</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).</p>\n</blockquote>",
-            "categories": [
-                "storage"
-            ],
-            "description": "Interplanetary Filesystem - the Web3 standard for content-addressing, interoperable with HTTP",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://ipfs.tech/",
-            "location": "/__w/charts/charts/community/ipfs",
-            "latest_version": "1.0.37",
-            "latest_app_version": "v0.29.0",
-            "latest_human_version": "v0.29.0_1.0.37",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "ipfs",
-            "recommended": false,
-            "title": "IPFS",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "file-sharing",
-                "kubo"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/ipfs/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/ipfs/screenshots/screenshot2.png"
-            ],
-            "sources": [
-                "https://github.com/ipfs/kubo",
-                "https://github.com/truenas/charts/tree/master/community/ipfs",
-                "https://ipfs.tech/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/ipfs/icons/icon.png"
         },
         "mumble": {
             "app_readme": "<h1>Mumble</h1>\n<p><a href=\"https://www.mumble.info/\">Mumble</a> is an Open Source, Low Latency, High Quality Voice Chat Home Downloads Documentation Blog Contribute About</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Mumble</code> directories.\nAfterward, the <code>Mumble</code> container will run as a <strong>non</strong>-root user (<code>1000</code>, Cannot change).</p>\n</blockquote>\n<p>You can change the server configuration by adding additional environment variables.\nPrefix the configuration variable with <code>MUMBLE_CONFIG_</code> and it will be added to the configuration file.\nView the <a href=\"https://wiki.mumble.info/wiki/Murmur.ini\">Mumble Configuration File</a> for more information.</p>\n<p>For example you can set <code>autobanAttempts</code> like this:</p>\n<ul>\n<li>Name: <code>MUMBLE_CONFIG_autobanAttempts</code></li>\n<li>Value: <code>5</code></li>\n</ul>",
@@ -3288,41 +3137,6 @@
                 "https://hub.docker.com/r/tinymediamanager/tinymediamanager"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/tiny-media-manager/icons/icon.png"
-        },
-        "sftpgo": {
-            "app_readme": "<h1>SFTPGo</h1>\n<p><a href=\"https://github.com/drakkan/sftpgo\">SFTPGo</a> is a fully featured and highly configurable SFTP server with optional HTTP/S, FTP/S and WebDAV support - S3, Google Cloud Storage, Azure Blob</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>SFTPGo</code> directories.\nAfterward, the <code>SFTPGo</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "storage"
-            ],
-            "description": "SFTPGo is a fully featured and highly configurable SFTP server with optional HTTP/S, FTP/S and WebDAV support - S3, Google Cloud Storage, Azure Blob",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/drakkan/sftpgo",
-            "location": "/__w/charts/charts/community/sftpgo",
-            "latest_version": "1.2.8",
-            "latest_app_version": "2.6.2",
-            "latest_human_version": "2.6.2_1.2.8",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "sftpgo",
-            "recommended": false,
-            "title": "SFTPGo",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "sftp"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://hub.docker.com/r/drakkan/sftpgo",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/sftpgo",
-                "https://github.com/drakkan/sftpgo"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/sftpgo/icons/icon.png"
         },
         "grafana": {
             "app_readme": "<h1>Grafana</h1>\n<p><a href=\"https://grafana.com/\">Grafana</a> is the open source analytics &amp; monitoring solution for every database.</p>\n<p>Additional configuration can be made by adding additional environment variables\nHere is the available <a href=\"https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/\">configuration documentation</a></p>\n<p>Use the following syntax:\n<code>GF_[SECTION-NAME]_[KEY-NAME]</code></p>\n<p>Example:\n<code>GF_SMTP_ENABLED</code></p>",
