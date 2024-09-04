@@ -3156,41 +3156,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/metube/icons/icon.svg"
         },
-        "prowlarr": {
-            "app_readme": "<h1>Prowlarr</h1>\n<p><a href=\"https://github.com/Prowlarr/Prowlarr\">Prowlarr</a> is a music collection manager for Usenet and BitTorrent users.</p>",
-            "categories": [
-                "media"
-            ],
-            "description": "Prowlarr is an indexer manager/proxy to integrate with your various PVR apps.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://prowlarr.com/",
-            "location": "/__w/charts/charts/community/prowlarr",
-            "latest_version": "1.2.35",
-            "latest_app_version": "1.23.1.4708",
-            "latest_human_version": "1.23.1.4708_1.2.35",
-            "last_update": "2024-09-03 06:00:18",
-            "name": "prowlarr",
-            "recommended": false,
-            "title": "Prowlarr",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "indexer"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/onedr0p/containers/tree/main/apps/prowlarr",
-                "https://github.com/truenas/charts/tree/master/community/prowlarr",
-                "https://github.com/Prowlarr/Prowlarr"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/prowlarr/icons/icon.png"
-        },
         "palworld": {
             "app_readme": "<h1>Palworld</h1>\n<p><a href=\"https://www.pocketpair.jp/palworld\">Palworld</a> is a multiplayer, open-world survival crafting game where you befriend and collect mysterious creatures called \"Pals\".</p>",
             "categories": [
