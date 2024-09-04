@@ -1,41 +1,5 @@
 {
     "charts": {
-        "minio": {
-            "app_readme": "<h1>MinIO</h1>\n<p><a href=\"https://min.io\">MinIO</a> is a High Performance Object Storage released under Apache License v2.0. It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure for machine learning, analytics and application data workloads.</p>\n<p><strong>NOTE</strong></p>\n<ul>\n<li>On fresh installation, minIO data directory's ownership will be updated to minio:minio.</li>\n<li>For existing installations that are exhibiting the upgrade to &gt;=1.5.0, the minIO data directory's ownership will be migrated to minio:minio.</li>\n</ul>",
-            "categories": [
-                "storage",
-                "S3"
-            ],
-            "description": "High Performance, Kubernetes Native Object Storage",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://min.io",
-            "location": "/__w/charts/charts/charts/minio",
-            "latest_version": "2.0.18",
-            "latest_app_version": "2024-08-29T01-40-52Z",
-            "latest_human_version": "2024-08-29T01-40-52Z_2.0.18",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "minio",
-            "recommended": false,
-            "title": "MinIO",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/minio/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/minio/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/minio/screenshots/screenshot3.png"
-            ],
-            "sources": [
-                "https://github.com/minio/minio"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/minio/icons/icon.png"
-        },
         "wg-easy": {
             "app_readme": "<h1>WG-Easy</h1>\n<p><a href=\"https://github.com/WeeJeWel/wg-easy\">WG-Easy (WireGuard Easy)</a> is the easiest way to install &amp; manage WireGuard!</p>",
             "categories": [
