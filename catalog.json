@@ -1479,47 +1479,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/transmission/icons/icon.png"
         },
-        "n8n": {
-            "app_readme": "<h1>n8n</h1>\n<p><a href=\"https://n8n.io/\">n8n</a> is an extendable workflow automation tool.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>postgres</code> directories.\nAfterward, the <code>postgres</code> container will run as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>postgres</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "n8n is an extendable workflow automation tool.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://n8n.io/",
-            "location": "/__w/charts/charts/community/n8n",
-            "latest_version": "1.2.75",
-            "latest_app_version": "1.57.0",
-            "latest_human_version": "1.57.0_1.2.75",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "n8n",
-            "recommended": false,
-            "title": "n8n",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "workflows",
-                "automation"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/n8n/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/n8n/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/n8n/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/n8n/screenshots/screenshot4.png"
-            ],
-            "sources": [
-                "https://github.com/n8n-io/n8n",
-                "https://github.com/truenas/charts/tree/master/community/n8n",
-                "https://hub.docker.com/r/n8nio/n8n"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/n8n/icons/icon.png"
-        },
         "plex-auto-languages": {
             "app_readme": "<h1>Plex Auto Languages</h1>\n<p><a href=\"https://github.com/RemiRigal/Plex-Auto-Languages\">Plex Auto Languages</a> offer automated language selection for Plex TV Shows</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Plex Auto Languages</code> directories.\nAfterward, the <code>Plex Auto Languages</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
             "categories": [
@@ -1594,43 +1553,6 @@
                 "https://github.com/Lidarr/Lidarr"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/lidarr/icons/icon.png"
-        },
-        "node-red": {
-            "app_readme": "<h1>Node-RED</h1>\n<p><a href=\"https://nodered.org\">Node-RED</a> is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Node-RED</code> directories.\nAfterward, the <code>Node-RED</code> container will run as a <strong>non</strong>-root user (<code>1000</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://nodered.org",
-            "location": "/__w/charts/charts/community/node-red",
-            "latest_version": "1.2.13",
-            "latest_app_version": "3.1.10",
-            "latest_human_version": "3.1.10_1.2.13",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "node-red",
-            "recommended": false,
-            "title": "Node-RED",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "automation"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/node-red/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://github.com/node-red/node-red-docker",
-                "https://github.com/truenas/charts/tree/master/community/node-red",
-                "https://nodered.org"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/node-red/icons/icon.png"
         },
         "qbittorrent": {
             "app_readme": "<h1>qBittorrent</h1>\n<p>The <a href=\"https://www.qbittorrent.org/\">qBittorrent</a> project aims to provide an open-source software alternative to \u00b5Torrent.</p>",
@@ -1782,46 +1704,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/metube/icons/icon.svg"
         },
-        "wordpress": {
-            "app_readme": "<h1>Wordpress</h1>\n<p><a href=\"https://wordpress.org/\">Wordpress</a> is a web content management system.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>wordpress</code> directories.\nAfterward, the <code>wordpress</code> container will run as a <strong>non</strong>-root user (<code>33</code>).\nSame applies to the <code>mariadb</code> container. This will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>mariadb</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>wordpress</code> and <code>mariadb</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Wordpress is a web content management system",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://wordpress.org",
-            "location": "/__w/charts/charts/community/wordpress",
-            "latest_version": "1.2.11",
-            "latest_app_version": "6.6.1",
-            "latest_human_version": "6.6.1_1.2.11",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "wordpress",
-            "recommended": false,
-            "title": "Wordpress",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "cms",
-                "blog"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/wordpress/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/wordpress/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/wordpress/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/wordpress/screenshots/screenshot4.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/_/wordpress",
-                "https://github.com/truenas/charts/tree/master/community/wordpress"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/wordpress/icons/icon.png"
-        },
         "handbrake": {
             "app_readme": "<h1>Handbrake</h1>\n<p><a href=\"https://github.com/jlesage/docker-handbrake\">Handbrake</a> is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</p>",
             "categories": [
@@ -1858,41 +1740,6 @@
                 "https://hub.docker.com/r/jlesage/handbrake"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/handbrake/icons/icon.png"
-        },
-        "logseq": {
-            "app_readme": "<h1>Logseq</h1>\n<p><a href=\"https://logseq.com/\">Logseq</a> is a privacy-first, open-source platform for knowledge management and collaboration.</p>\n<p>HTTPS is <strong>required</strong> in order to use Logseq.</p>\n<p>Either by using the Certificate selection or with an external reverse proxy.</p>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Logseq is a privacy-first, open-source platform for knowledge management and collaboration.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://logseq.com/",
-            "location": "/__w/charts/charts/community/logseq",
-            "latest_version": "1.2.3",
-            "latest_app_version": "latest",
-            "latest_human_version": "latest_1.2.3",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "logseq",
-            "recommended": false,
-            "title": "Logseq",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "knowledge",
-                "management"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/logseq/logseq",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/logseq"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/logseq/icons/icon.png"
         },
         "piwigo": {
             "app_readme": "<h1>Piwigo</h1>\n<p><a href=\"https://piwigo.org/\">Piwigo</a> is a photo gallery software for the web that comes with powerful features to\npublish and manage your collection of pictures.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>mariadb</code> directories.\nAfterwards <code>mariadb</code> will start as a <strong>non</strong>-root user (<code>999</code>).&gt;\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to\napply the correct permissions to the <code>mariadb</code> <strong>backups</strong> directory.\nContainer that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>mariadb</code> data directories.</p>\n</blockquote>",
@@ -1931,46 +1778,6 @@
                 "https://github.com/truenas/charts/tree/master/community/piwigo"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/piwigo/icons/icon.svg"
-        },
-        "firefly-iii": {
-            "app_readme": "<h1>Firefly III</h1>\n<p><a href=\"https://www.firefly-iii.org/\">Firefly III</a> is a personal finances manager</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>postgres</code> directories.\nAfterward, the <code>postgres</code> container will run as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>postgres</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Firefly III is a personal finances manager",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.firefly-iii.org/",
-            "location": "/__w/charts/charts/community/firefly-iii",
-            "latest_version": "1.1.30",
-            "latest_app_version": "6.1.19",
-            "latest_human_version": "6.1.19_1.1.30",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "firefly-iii",
-            "recommended": false,
-            "title": "Firefly III",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "finance"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/firefly-iii/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/firefly-iii/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/firefly-iii/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/firefly-iii/screenshots/screenshot4.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/fireflyiii/core/",
-                "https://github.com/truenas/charts/tree/master/community/firefly-iii",
-                "https://github.com/firefly-iii/firefly-iii"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/firefly-iii/icons/icon.png"
         },
         "mumble": {
             "app_readme": "<h1>Mumble</h1>\n<p><a href=\"https://www.mumble.info/\">Mumble</a> is an Open Source, Low Latency, High Quality Voice Chat Home Downloads Documentation Blog Contribute About</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Mumble</code> directories.\nAfterward, the <code>Mumble</code> container will run as a <strong>non</strong>-root user (<code>1000</code>, Cannot change).</p>\n</blockquote>\n<p>You can change the server configuration by adding additional environment variables.\nPrefix the configuration variable with <code>MUMBLE_CONFIG_</code> and it will be added to the configuration file.\nView the <a href=\"https://wiki.mumble.info/wiki/Murmur.ini\">Mumble Configuration File</a> for more information.</p>\n<p>For example you can set <code>autobanAttempts</code> like this:</p>\n<ul>\n<li>Name: <code>MUMBLE_CONFIG_autobanAttempts</code></li>\n<li>Value: <code>5</code></li>\n</ul>",
