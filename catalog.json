@@ -1255,46 +1255,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/jellyseerr/icons/icon.svg"
         },
-        "nginx-proxy-manager": {
-            "app_readme": "<h1>Nginx Proxy Manager</h1>\n<p><a href=\"https://nginxproxymanager.com\">Nginx Proxy Manager</a> Expose your services easily and securely</p>\n<blockquote>\n<p>Application requires to run as root. This is a limitation of the application.</p>\n</blockquote>",
-            "categories": [
-                "networking"
-            ],
-            "description": "Expose your services easily and securely",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://nginxproxymanager.com/",
-            "location": "/__w/charts/charts/community/nginx-proxy-manager",
-            "latest_version": "1.0.33",
-            "latest_app_version": "2.11.3",
-            "latest_human_version": "2.11.3_1.0.33",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "nginx-proxy-manager",
-            "recommended": false,
-            "title": "Nginx Proxy Manager",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "reverse",
-                "proxy"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/nginx-proxy-manager/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/nginx-proxy-manager/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/nginx-proxy-manager/screenshots/screenshot3.png"
-            ],
-            "sources": [
-                "https://nginxproxymanager.com/",
-                "https://github.com/truenas/charts/tree/master/community/nginx-proxy-manager",
-                "https://hub.docker.com/r/jc21/nginx-proxy-manager"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/nginx-proxy-manager/icons/icon.png"
-        },
         "odoo": {
             "app_readme": "<h1>Odoo</h1>\n<p><a href=\"https://odoo.com\">Odoo</a> is a suite of web based open source business apps.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>postgres</code> directories.\nAfterwards <code>postgres</code> will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>postgres</code> data directories.</p>\n</blockquote>",
             "categories": [
@@ -1483,41 +1443,6 @@
                 "https://github.com/navidrome/navidrome/"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/navidrome/icons/icon.png"
-        },
-        "tailscale": {
-            "app_readme": "<h1>Tailscale</h1>\n<p><a href=\"https://tailscale.com\">Tailscale</a> Secure remote access to shared resources</p>\n<ul>\n<li>When <code>Userspace</code> is <strong>disabled</strong>, <code>Tailscale</code> will run as root, with <code>/dev/net/tun</code> device mounted from the host.</li>\n<li>When <code>Userspace</code> is <strong>enabled</strong>, <code>Tailscale</code> will run as a non-root user.</li>\n</ul>",
-            "categories": [
-                "networking"
-            ],
-            "description": "Secure remote access to shared resources",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://tailscale.com/",
-            "location": "/__w/charts/charts/community/tailscale",
-            "latest_version": "1.0.45",
-            "latest_app_version": "1.72.1",
-            "latest_human_version": "1.72.1_1.0.45",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "tailscale",
-            "recommended": false,
-            "title": "Tailscale",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "vpn"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://tailscale.com/",
-                "https://github.com/truenas/charts/tree/master/community/tailscale",
-                "https://hub.docker.com/r/tailscale/tailscale"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/tailscale/icons/icon.png"
         },
         "whoogle": {
             "app_readme": "<h1>Whoogle</h1>\n<p><a href=\"https://github.com/benbusby/whoogle-search\">Whoogle</a> is a self-hosted, ad-free, privacy-respecting metasearch engine</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Whoogle</code> directories.\nAfterward, the <code>Whoogle</code> container will run as a <strong>non</strong>-root user (<code>927</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>\n<p>See <a href=\"https://github.com/benbusby/whoogle-search?tab=readme-ov-file#environment-variables\">Whoogle's Docs</a> for a list of available environment variables.\nNote that all configuration via WebUI will be reset if the container is restarted.\nOnly config changes made via environment variables will persist.</p>",
@@ -2137,78 +2062,6 @@
                 "https://github.com/plankanban/planka"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/planka/icons/icon.png"
-        },
-        "zerotier": {
-            "app_readme": "<h1>Zerotier</h1>\n<p><a href=\"https://www.zerotier.com\">Zerotier</a> Securely connect any device, anywhere.</p>",
-            "categories": [
-                "networking"
-            ],
-            "description": "Securely connect any device, anywhere.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.zerotier.com",
-            "location": "/__w/charts/charts/community/zerotier",
-            "latest_version": "1.0.23",
-            "latest_app_version": "1.14.0",
-            "latest_human_version": "1.14.0_1.0.23",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "zerotier",
-            "recommended": false,
-            "title": "Zerotier",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "vpn"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://www.zerotier.com",
-                "https://github.com/truenas/charts/tree/master/community/zerotier",
-                "https://hub.docker.com/r/zerotier/zerotier"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/zerotier/icons/icon.png"
-        },
-        "ddns-updater": {
-            "app_readme": "<h1>DDNS Updater</h1>\n<p><a href=\"https://github.com/qdm12/ddns-updater\">DDNS Updater</a> is a lightweight universal DDNS Updater with web UI</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>DDNS Updater</code> directories.\nAfterward, the <code>DDNS Updater</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "networking"
-            ],
-            "description": "Lightweight universal DDNS Updater with web UI",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/qdm12/ddns-updater",
-            "location": "/__w/charts/charts/community/ddns-updater",
-            "latest_version": "1.0.29",
-            "latest_app_version": "2.7.0",
-            "latest_human_version": "2.7.0_1.0.29",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "ddns-updater",
-            "recommended": false,
-            "title": "DDNS Updater",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "ddns"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/ddns-updater/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://github.com/qdm12/ddns-updater",
-                "https://github.com/truenas/charts/tree/master/community/ddns-updater",
-                "https://hub.docker.com/r/qmcgaw/ddns-updater"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/ddns-updater/icons/icon.svg"
         },
         "freshrss": {
             "app_readme": "<h1>FreshRSS</h1>\n<p><a href=\"https://freshrss.org/\">FreshRSS</a> is a free, self-hostable news aggregator</p>",
@@ -3163,41 +3016,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/logseq/icons/icon.png"
         },
-        "tftpd-hpa": {
-            "app_readme": "<h1>TFTP</h1>\n<p><a href=\"https://manpages.debian.org/testing/tftpd-hpa/tftpd.8.en.html\">TFTP</a> is a server for the Trivial File Transfer Protocol.</p>\n<p>The app runs as <code>root</code> user and drops privileges to <code>tftp</code> (9069) user for the TFTP service.</p>\n<blockquote>\n<p>On every application start, a container will be launched with <strong>root</strong> privileges.\nThis will check the parent directory permissions and ownership.\nIf there is a mismatch it will apply the correct permissions to the TFTP directories.\nWhen \"Allow Create\" is checked, the above container will also check and <code>chmod</code> if needed\nto <code>757</code> the TFTP directories and to <code>555</code> when not checked.\nAfterward, the <code>TFTP</code> container will run as a <strong>root</strong> user, dropping privileges\nto <code>tftp</code> (9069) user for the TFTP service.\nNote: You need to have configured DHCP server for network boot to work.</p>\n</blockquote>",
-            "categories": [
-                "networking"
-            ],
-            "description": "A lightweight tftp-server",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/truenas/containers/tree/main/apps/tftpd-hpa",
-            "location": "/__w/charts/charts/community/tftpd-hpa",
-            "latest_version": "1.0.18",
-            "latest_app_version": "1.0.0",
-            "latest_human_version": "1.0.0_1.0.18",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "tftpd-hpa",
-            "recommended": false,
-            "title": "TFTP Server",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "tftp"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/truenas/containers/tree/main/apps/tftpd-hpa",
-                "https://github.com/truenas/charts/tree/master/community/tftpd-hpa",
-                "https://hub.docker.com/r/ixsystems/tftpd-hpa"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/tftpd-hpa/icons/icon.png"
-        },
         "piwigo": {
             "app_readme": "<h1>Piwigo</h1>\n<p><a href=\"https://piwigo.org/\">Piwigo</a> is a photo gallery software for the web that comes with powerful features to\npublish and manage your collection of pictures.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>mariadb</code> directories.\nAfterwards <code>mariadb</code> will start as a <strong>non</strong>-root user (<code>999</code>).&gt;\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to\napply the correct permissions to the <code>mariadb</code> <strong>backups</strong> directory.\nContainer that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>mariadb</code> data directories.</p>\n</blockquote>",
             "categories": [
@@ -3585,45 +3403,6 @@
                 "https://github.com/blakeblackshear/frigate"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/frigate/icons/icon.svg"
-        },
-        "adguard-home": {
-            "app_readme": "<h1>AdGuard Home</h1>\n<p>During the setup wizard, AdGuard Home presents an option to select on which port the web interface will be available.\n(Defaults to 80. Which is a privileged port and also usually the TrueNAS SCALE UI uses that port)\nBecause of that, App will force the webUI to listen to port 30000 (or the port selected by user in the TrueNAS SCALE UI).</p>\n<p>If you select a different port in the wizard, the Dashboard will not work initially but\nafter a couple of minutes container will automatically restart and the Dashboard will\nbe available on the port you selected on the TrueNAS SCALE UI.</p>\n<blockquote>\n<ul>\n<li>AdGuard runs as <code>root</code> user.</li>\n<li>AdGuard runs with host networking enabled.</li>\n</ul>\n</blockquote>",
-            "categories": [
-                "networking"
-            ],
-            "description": "Free and open source, powerful network-wide ads & trackers blocking DNS server.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/AdguardTeam/AdGuardHome",
-            "location": "/__w/charts/charts/community/adguard-home",
-            "latest_version": "1.0.45",
-            "latest_app_version": "0.107.52",
-            "latest_human_version": "0.107.52_1.0.45",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "adguard-home",
-            "recommended": false,
-            "title": "AdGuard Home",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "dns",
-                "adblock"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/adguard-home/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/adguard-home/screenshots/screenshot2.png"
-            ],
-            "sources": [
-                "https://github.com/AdguardTeam/AdGuardHome",
-                "https://github.com/truenas/charts/tree/master/community/adguard-home",
-                "https://hub.docker.com/r/adguard/adguardhome"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/adguard-home/icons/icon.png"
         },
         "organizr": {
             "app_readme": "<h1>Organizr</h1>\n<p><a href=\"https://docs.organizr.app/\">Organizr</a> is a HTPC/Homelab Services Organizer - Written in PHP</p>",
