@@ -3722,48 +3722,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/tdarr/icons/icon.png"
         },
-        "roundcube": {
-            "app_readme": "<h1>Roundcube</h1>\n<p><a href=\"https://roundcube.net/\">Roundcube</a> is a browser-based multilingual IMAP client with an application-like user interface.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>postgres</code> directories.\nAfterward, the <code>postgres</code> container will run as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>postgres</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Roundcube is a browser-based multilingual IMAP client with an application-like user interface.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://roundcube.net/",
-            "location": "/__w/charts/charts/community/roundcube",
-            "latest_version": "1.0.6",
-            "latest_app_version": "1.6.9",
-            "latest_human_version": "1.6.9_1.0.6",
-            "last_update": "2024-09-03 06:00:18",
-            "name": "roundcube",
-            "recommended": false,
-            "title": "Roundcube",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "webmail",
-                "email"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/roundcube/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/roundcube/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/roundcube/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/roundcube/screenshots/screenshot4.png",
-                "https://media.sys.truenas.net/apps/roundcube/screenshots/screenshot5.png"
-            ],
-            "sources": [
-                "https://roundcube.net/",
-                "https://github.com/truenas/charts/tree/master/community/roundcube",
-                "https://hub.docker.com/r/roundcube/roundcubemail/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/roundcube/icons/icon.png"
-        },
         "tiny-media-manager": {
             "app_readme": "<h1>tinyMediaManager</h1>\n<p><a href=\"https://www.tinymediamanager.org/\">tinyMediaManager</a> is a media management tool written in Java/Swing.</p>",
             "categories": [
