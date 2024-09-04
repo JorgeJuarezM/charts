@@ -2476,79 +2476,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/distribution/icons/icon.svg"
         },
-        "terraria": {
-            "app_readme": "<h1>Terraria</h1>\n<p><a href=\"https://terraria.org/\">Terraria</a> is a land of adventure! A land of mystery! A land that's yours to shape, defend, and enjoy.</p>\n<p>This applies only for the <code>TShock</code> image.\nOn the first run, you have to check the logs to get the server token. You will find something like this:</p>\n<p><code>text\nLogin before join enabled. Users may be prompted for an account specific password instead of a server password on connect.\nLogin using UUID enabled. Users automatically login via UUID.\nA malicious server can easily steal a user's UUID. You may consider turning this option off if you run a public server.\nTShock Notice: setup-code.txt is still present, and the code located in that file will be used.\nTo setup the server, join the game and type /setup 424041\nThis token will display until disabled by verification. (/setup)</code></p>\n<p>Join the server and run <code>/setup &lt;token&gt;</code></p>",
-            "categories": [
-                "games"
-            ],
-            "description": "Terraria is a land of adventure! A land of mystery! A land that's yours to shape, defend, and enjoy.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://terraria.org/",
-            "location": "/__w/charts/charts/community/terraria",
-            "latest_version": "1.0.22",
-            "latest_app_version": "1.4.4.9",
-            "latest_human_version": "1.4.4.9_1.0.22",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "terraria",
-            "recommended": false,
-            "title": "Terraria",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "world",
-                "building",
-                "adventure"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://terraria.org/",
-                "https://github.com/truenas/charts/tree/master/community/terraria",
-                "https://github.com/ryansheehan/terraria"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/terraria/icons/icon.png"
-        },
-        "minecraft": {
-            "app_readme": "<h1>Minecraft</h1>\n<p><a href=\"https://www.minecraft.net/en-us\">Minecraft</a> is a sandbox game</p>\n<blockquote>\n<p>Application requires to run as root.</p>\n</blockquote>\n<p>Depending on the <code>Type</code> of server selected, you might need to add additional\ncustom environment variables to the application.</p>\n<p>More info can be found <a href=\"https://itzg.github.io/docker-minecraft-docs/java/server-types/bukkit-spigot/\">here</a>\nSelect the type on the sidebar.</p>\n<p>Note that some values are only applicable during the world generation.\nMore info can be found <a href=\"https://itzg.github.io/docker-minecraft-docs/\">here</a></p>",
-            "categories": [
-                "games"
-            ],
-            "description": "Minecraft is a sandbox game",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.minecraft.net/en-us",
-            "location": "/__w/charts/charts/community/minecraft",
-            "latest_version": "1.2.17",
-            "latest_app_version": "2024.7.2",
-            "latest_human_version": "2024.7.2_1.2.17",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "minecraft",
-            "recommended": false,
-            "title": "Minecraft",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "world",
-                "building"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://www.minecraft.net/en-us",
-                "https://github.com/truenas/charts/tree/master/community/minecraft",
-                "https://github.com/itzg/docker-minecraft-server"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/minecraft/icons/icon.svg"
-        },
         "homarr": {
             "app_readme": "<h1>Homarr</h1>\n<p><a href=\"https://github.com/ajnart/homarr\">Homarr</a> is a sleek, modern dashboard that puts all of your apps and services at your fingertips.</p>\n<h2>Upgrade to 2.0.0</h2>\n<p>Direct upgrade to 2.x.x is not possible, due to major upstream changes.\nThe changes require new storage configuration that cannot be assumed, nor configured\nduring the upgrade. Please re-install in order to configure this new storage.</p>",
             "categories": [
@@ -3121,41 +3048,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/metube/icons/icon.svg"
         },
-        "palworld": {
-            "app_readme": "<h1>Palworld</h1>\n<p><a href=\"https://www.pocketpair.jp/palworld\">Palworld</a> is a multiplayer, open-world survival crafting game where you befriend and collect mysterious creatures called \"Pals\".</p>",
-            "categories": [
-                "games"
-            ],
-            "description": "Palworld is a multiplayer, open-world survival crafting game where you befriend and collect mysterious creatures called \"Pals\".",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.pocketpair.jp/palworld",
-            "location": "/__w/charts/charts/community/palworld",
-            "latest_version": "1.0.4",
-            "latest_app_version": "palworld",
-            "latest_human_version": "palworld_1.0.4",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "palworld",
-            "recommended": false,
-            "title": "Palworld",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "palworld"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://www.pocketpair.jp/palworld",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/palworld",
-                "https://github.com/ich777/docker-steamcmd-server/tree/palworld"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/palworld/icons/icon.webp"
-        },
         "wordpress": {
             "app_readme": "<h1>Wordpress</h1>\n<p><a href=\"https://wordpress.org/\">Wordpress</a> is a web content management system.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>wordpress</code> directories.\nAfterward, the <code>wordpress</code> container will run as a <strong>non</strong>-root user (<code>33</code>).\nSame applies to the <code>mariadb</code> container. This will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>mariadb</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>wordpress</code> and <code>mariadb</code> data directories.</p>\n</blockquote>",
             "categories": [
@@ -3417,43 +3309,6 @@
                 "https://hub.docker.com/r/ixsystems/tftpd-hpa"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/tftpd-hpa/icons/icon.png"
-        },
-        "mineos": {
-            "app_readme": "<h1>MineOS</h1>\n<p><a href=\"https://github.com/hexparrot/mineos-node\">MineOS</a> is a server front-end to ease managing Minecraft administrative tasks.</p>",
-            "categories": [
-                "games"
-            ],
-            "description": "MineOS is a server front-end to ease managing Minecraft administrative tasks.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/hexparrot/mineos-node",
-            "location": "/__w/charts/charts/community/mineos",
-            "latest_version": "1.0.20",
-            "latest_app_version": "latest",
-            "latest_human_version": "latest_1.0.20",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "mineos",
-            "recommended": false,
-            "title": "MineOS",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "minecraft"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/mineos/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/hexparrot/mineos/",
-                "https://github.com/truenas/charts/tree/master/community/mineos",
-                "https://github.com/hexparrot/mineos-node"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/mineos/icons/icon.png"
         },
         "piwigo": {
             "app_readme": "<h1>Piwigo</h1>\n<p><a href=\"https://piwigo.org/\">Piwigo</a> is a photo gallery software for the web that comes with powerful features to\npublish and manage your collection of pictures.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>mariadb</code> directories.\nAfterwards <code>mariadb</code> will start as a <strong>non</strong>-root user (<code>999</code>).&gt;\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to\napply the correct permissions to the <code>mariadb</code> <strong>backups</strong> directory.\nContainer that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>mariadb</code> data directories.</p>\n</blockquote>",
