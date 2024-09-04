@@ -198,43 +198,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/emby/icons/icon.png"
         },
-        "home-assistant": {
-            "app_readme": "<h1>Home Assistant</h1>\n<p><a href=\"https://www.home-assistant.io/\">Home Assistant</a> is an open source home automation that puts local control and privacy first.</p>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Home Assistant is an open source home automation that puts local control and privacy first.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.home-assistant.io/",
-            "location": "/__w/charts/charts/charts/home-assistant",
-            "latest_version": "2.0.40",
-            "latest_app_version": "2024.8.3",
-            "latest_human_version": "2024.8.3_2.0.40",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "home-assistant",
-            "recommended": false,
-            "title": "Home Assistant",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "home-automation",
-                "assistant"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/home-assistant/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://github.com/home-assistant/home-assistant",
-                "https://github.com/truenas/charts/tree/master/charts/home-assistant"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/home-assistant/icons/icon.png"
-        },
         "photoprism": {
             "app_readme": "<h1>PhotoPrism</h1>\n<p><a href=\"https://photoprism.app/\">PhotoPrism</a> is a server-based application for browsing, organizing and sharing your personal photo collection.</p>",
             "categories": [
@@ -784,121 +747,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/invidious/icons/icon.svg"
         },
-        "listmonk": {
-            "app_readme": "<h1>Listmonk</h1>\n<p><a href=\"https://listmonk.app/\">Listmonk</a> is a self-hosted newsletter and mailing list manager.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>listmonk</code> directories.\nAfterward, the <code>listmonk</code> container will run as a <strong>non</strong>-root user (default <code>568</code>).\nSame applies to the <code>postgres</code> container. This will run afterwards as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>listmonk</code> and <code>postgres</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Listmonk is a self-hosted newsletter and mailing list manager.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://listmonk.app/",
-            "location": "/__w/charts/charts/community/listmonk",
-            "latest_version": "1.2.8",
-            "latest_app_version": "3.0.0",
-            "latest_human_version": "3.0.0_1.2.8",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "listmonk",
-            "recommended": false,
-            "title": "Listmonk",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "mailing-list",
-                "newsletter"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/listmonk/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/listmonk/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/listmonk/screenshots/screenshot3.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/listmonk/listmonk",
-                "https://github.com/knadh/listmonk",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/listmonk"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/listmonk/icons/icon.svg"
-        },
-        "fscrawler": {
-            "app_readme": "<h1>FSCrawler</h1>\n<p><a href=\"https://fscrawler.readthedocs.io/\">FSCrawler</a> is a crawler that helps to index binary documents such as PDF, Open Office, MS Office.</p>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "FSCrawler is a crawler that helps to index binary documents such as PDF, Open Office, MS Office.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://fscrawler.readthedocs.io/",
-            "location": "/__w/charts/charts/community/fscrawler",
-            "latest_version": "1.2.5",
-            "latest_app_version": "2.9",
-            "latest_human_version": "2.9_1.2.5",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "fscrawler",
-            "recommended": false,
-            "title": "FSCrawler",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "index",
-                "crawler"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/dadoonet/fscrawler",
-                "https://github.com/truenas/charts/tree/master/community/fscrawler",
-                "https://hub.docker.com/r/dadoonet/fscrawler",
-                "https://fscrawler.readthedocs.io/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/fscrawler/icons/icon.svg"
-        },
-        "homer": {
-            "app_readme": "<h1>Homer</h1>\n<p><a href=\"https://github.com/bastienwirtz/homer\">Homer</a> is a dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Homer</code> directories.\nAfterward, the <code>Homer</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Homer is a dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/bastienwirtz/homer",
-            "location": "/__w/charts/charts/community/homer",
-            "latest_version": "1.2.4",
-            "latest_app_version": "23.10.1",
-            "latest_human_version": "23.10.1_1.2.4",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "homer",
-            "recommended": false,
-            "title": "Homer",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "dashboard",
-                "homepage"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/homer/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/b4bz/homer",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/homer",
-                "https://github.com/bastienwirtz/homer"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/homer/icons/icon.png"
-        },
         "readarr": {
             "app_readme": "<h1>Readarr</h1>\n<p><a href=\"https://github.com/Readarr/Readarr\">Readarr</a> is an ebook and audiobook collection manager for Usenet and BitTorrent users.</p>",
             "categories": [
@@ -939,44 +787,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/readarr/icons/icon.png"
         },
-        "mealie": {
-            "app_readme": "<h1>Mealie</h1>\n<p><a href=\"https://mealie.io\">Mealie</a> is a self-hosted recipe manager and meal planner</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>postgres</code> directories.\nAfterward, the <code>postgres</code> container will run as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>postgres</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Mealie is a self-hosted recipe manager and meal planner",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://mealie.io",
-            "location": "/__w/charts/charts/community/mealie",
-            "latest_version": "1.0.25",
-            "latest_app_version": "1.12.0",
-            "latest_human_version": "1.12.0_1.0.25",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "mealie",
-            "recommended": false,
-            "title": "Mealie",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "recipes",
-                "meal planner"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/mealie/screenshots/screenshot1.png"
-            ],
-            "sources": [
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/mealie",
-                "https://github.com/ndom91/briefkasten",
-                "https://nightly.mealie.io/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/mealie/icons/icon.png"
-        },
         "immich": {
             "app_readme": "<h1>Immich</h1>\n<p><a href=\"https://immich.app\">Immich</a> - Self-hosted backup solution for photos and videos on mobile device</p>",
             "categories": [
@@ -1012,50 +822,6 @@
                 "https://github.com/immich-app/immich"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/immich/icons/icon.svg"
-        },
-        "vikunja": {
-            "app_readme": "<h1>Vikunja</h1>\n<p><a href=\"https://vikunja.io\">Vikunja</a> is an open-source, self-hostable to-do app.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>postgres</code> directories.\nAfterward, the <code>postgres</code> container will run as a <strong>non</strong>-root user (<code>999</code>).\nOn each upgrade, a container will be launched with <strong>root</strong> privileges in order to apply the correct\npermissions to the <code>postgres</code> <strong>backups</strong> directory. Container that performs the backup will run as a <strong>non</strong>-root user (<code>999</code>) afterwards.\nKeep in mind the permissions on the backup directory will be changed to <code>999:999</code> on <strong>every</strong> update.\nBut will only be changed once for the <code>postgres</code> data directories.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Vikunja is an open-source, self-hostable to-do app.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://vikunja.io/",
-            "location": "/__w/charts/charts/community/vikunja",
-            "latest_version": "2.0.0",
-            "latest_app_version": "0.24.2",
-            "latest_human_version": "0.24.2_2.0.0",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "vikunja",
-            "recommended": false,
-            "title": "Vikunja",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "todo"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot1.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot2.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot3.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot4.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot5.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot6.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot7.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot8.webp",
-                "https://media.sys.truenas.net/apps/vikunja/screenshots/screenshot9.webp"
-            ],
-            "sources": [
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/vikunja",
-                "https://vikunja.io/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/vikunja/icons/icon.png"
         },
         "recyclarr": {
             "app_readme": "<h1>Recyclarr</h1>\n<p><a href=\"https://github.com/recyclarr/recyclarr\">Recyclarr</a> synchronizes recommended settings from the TRaSH guides to your Sonarr/Radarr instances.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Recyclarr</code> directories.\nAfterward, the <code>Recyclarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
@@ -1129,51 +895,6 @@
                 "https://www.chia.net/"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/chia/icons/icon.svg"
-        },
-        "paperless-ngx": {
-            "app_readme": "<h1>Paperless-ngx</h1>\n<p><a href=\"https://docs.paperless-ngx.com\">Paperless-ngx</a> is a document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.</p>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Paperless-ngx is a document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://docs.paperless-ngx.com",
-            "location": "/__w/charts/charts/community/paperless-ngx",
-            "latest_version": "1.2.49",
-            "latest_app_version": "2.11.6",
-            "latest_human_version": "2.11.6_1.2.49",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "paperless-ngx",
-            "recommended": false,
-            "title": "Paperless-ngx",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "document",
-                "management"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot4.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot5.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot6.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot7.png",
-                "https://media.sys.truenas.net/apps/paperless-ngx/screenshots/screenshot8.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/paperlessngx/paperless-ngx",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/paperless-ngx",
-                "https://github.com/paperless-ngx/paperless-ngx"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/paperless-ngx/icons/icon.svg"
         },
         "radarr": {
             "app_readme": "<h1>Radarr</h1>\n<p><a href=\"https://github.com/Radarr/Radarr\">Radarr</a> is a movie collection manager for Usenet and BitTorrent users.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Radarr</code> directories.\nAfterward, the <code>Radarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
