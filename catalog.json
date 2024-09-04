@@ -1165,45 +1165,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/navidrome/icons/icon.png"
         },
-        "whoogle": {
-            "app_readme": "<h1>Whoogle</h1>\n<p><a href=\"https://github.com/benbusby/whoogle-search\">Whoogle</a> is a self-hosted, ad-free, privacy-respecting metasearch engine</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Whoogle</code> directories.\nAfterward, the <code>Whoogle</code> container will run as a <strong>non</strong>-root user (<code>927</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>\n<p>See <a href=\"https://github.com/benbusby/whoogle-search?tab=readme-ov-file#environment-variables\">Whoogle's Docs</a> for a list of available environment variables.\nNote that all configuration via WebUI will be reset if the container is restarted.\nOnly config changes made via environment variables will persist.</p>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Whoogle is a self-hosted, ad-free, privacy-respecting metasearch engine",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/benbusby/whoogle-search",
-            "location": "/__w/charts/charts/community/whoogle",
-            "latest_version": "1.2.3",
-            "latest_app_version": "0.8.4",
-            "latest_human_version": "0.8.4_1.2.3",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "whoogle",
-            "recommended": false,
-            "title": "Whoogle",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "search",
-                "engine"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/whoogle/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/whoogle/screenshots/screenshot2.png"
-            ],
-            "sources": [
-                "https://github.com/benbusby/whoogle-search",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/whoogle",
-                "https://hub.docker.com/r/benbusby/whoogle-search"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/whoogle/icons/icon.png"
-        },
         "jellyfin": {
             "app_readme": "<h1>Jellyfin</h1>\n<p><a href=\"https://jellyfin.org/\">Jellyfin</a> is a Free Software Media System that puts you in control of managing and streaming your media.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Jellyfin</code> directories.\nAfterward, the <code>Jellyfin</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
             "categories": [
@@ -1245,81 +1206,6 @@
                 "https://jellyfin.org/"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/jellyfin/icons/icon.svg"
-        },
-        "pgadmin": {
-            "app_readme": "<h1>pgAdmin</h1>\n<p><a href=\"https://github.com/pgadmin-org/pgadmin4\">pgAdmin</a> is the most popular and feature rich Open Source administration and development platform for PostgreSQL</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>pgAdmin</code> directories.\nAfterward, the <code>pgAdmin</code> container will run as a <strong>non</strong>-root user (<code>5050</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.pgadmin.org/",
-            "location": "/__w/charts/charts/community/pgadmin",
-            "latest_version": "1.2.12",
-            "latest_app_version": "8.11",
-            "latest_human_version": "8.11_1.2.12",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "pgadmin",
-            "recommended": false,
-            "title": "pgAdmin",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "database",
-                "management"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/pgadmin/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/pgadmin/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/pgadmin/screenshots/screenshot3.png"
-            ],
-            "sources": [
-                "https://hub.docker.com/r/dpage/pgadmin4",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/pgadmin",
-                "https://www.pgadmin.org/"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/pgadmin/icons/icon.png"
-        },
-        "searxng": {
-            "app_readme": "<h1>SearXNG</h1>\n<p><a href=\"https://github.com/searxng/searxng\">SearXNG</a> is a privacy-respecting, hackable metasearch engine</p>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "SearXNG is a privacy-respecting, hackable metasearch engine",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/searxng/searxng",
-            "location": "/__w/charts/charts/community/searxng",
-            "latest_version": "1.2.18",
-            "latest_app_version": "2023.12.31",
-            "latest_human_version": "2023.12.31_1.2.18",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "searxng",
-            "recommended": false,
-            "title": "SearXNG",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "search"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://hub.docker.com/r/searxng/searxng",
-                "https://github.com/truenas/charts/tree/master/library/ix-dev/community/searxng",
-                "https://github.com/searxng/searxng"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/searxng/icons/icon.svg"
         },
         "sonarr": {
             "app_readme": "<h1>Sonarr</h1>\n<p><a href=\"https://github.com/Sonarr/Sonarr\">Sonarr</a> is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Sonarr</code> directories.\nAfterward, the <code>Sonarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
@@ -1406,42 +1292,6 @@
             ],
             "icon_url": "https://media.sys.truenas.net/apps/pigallery2/icons/icon.png"
         },
-        "rust-desk": {
-            "app_readme": "<h1>Rust Desk</h1>\n<p><a href=\"https://rustdesk.com\">Rust Desk</a> is an open-source remote desktop, and alternative to TeamViewer.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Rust Desk</code> directories.\nAfterward, the <code>Rust Desk</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Rust Desk is an open-source remote desktop, and alternative to TeamViewer.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://rustdesk.com",
-            "location": "/__w/charts/charts/community/rust-desk",
-            "latest_version": "1.2.5",
-            "latest_app_version": "1.1.11.1",
-            "latest_human_version": "1.1.11.1_1.2.5",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "rust-desk",
-            "recommended": false,
-            "title": "Rust Desk",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "remote",
-                "desktop"
-            ],
-            "screenshots": [],
-            "sources": [
-                "https://hub.docker.com/r/rustdesk/rustdesk-server",
-                "https://github.com/truenas/charts/tree/master/community/rust-desk",
-                "https://github.com/rustdesk/rustdesk-server"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/rust-desk/icons/icon.png"
-        },
         "autobrr": {
             "app_readme": "<h1>Autobrr</h1>\n<p><a href=\"https://github.com/autobrr/autobrr\">Autobrr</a> is the modern download automation tool for torrents and usenet.</p>",
             "categories": [
@@ -1517,48 +1367,6 @@
                 "https://github.com/morpheus65535/bazarr"
             ],
             "icon_url": "https://media.sys.truenas.net/apps/bazarr/icons/icon.png"
-        },
-        "homepage": {
-            "app_readme": "<h1>Homepage</h1>\n<p><a href=\"https://github.com/benphelps/homepage\">Homepage</a> is a modern, secure, highly customizable application dashboard.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Homepage</code> directories.\nAfterward, the <code>Homepage</code> container will run as a <strong>non</strong>-root user (<code>1000</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "productivity"
-            ],
-            "description": "Homepage is a modern, secure, highly customizable application dashboard.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://gethomepage.dev/",
-            "location": "/__w/charts/charts/community/homepage",
-            "latest_version": "1.2.18",
-            "latest_app_version": "0.9.6",
-            "latest_human_version": "0.9.6_1.2.18",
-            "last_update": "2024-09-03 05:58:58",
-            "name": "homepage",
-            "recommended": false,
-            "title": "Homepage",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [
-                "dashboard"
-            ],
-            "screenshots": [
-                "https://media.sys.truenas.net/apps/homepage/screenshots/screenshot1.png",
-                "https://media.sys.truenas.net/apps/homepage/screenshots/screenshot2.png",
-                "https://media.sys.truenas.net/apps/homepage/screenshots/screenshot3.png",
-                "https://media.sys.truenas.net/apps/homepage/screenshots/screenshot4.png",
-                "https://media.sys.truenas.net/apps/homepage/screenshots/screenshot5.png",
-                "https://media.sys.truenas.net/apps/homepage/screenshots/screenshot6.png"
-            ],
-            "sources": [
-                "https://gethomepage.dev/",
-                "https://github.com/truenas/charts/tree/master/community/homepage",
-                "https://github.com/benphelps/homepage"
-            ],
-            "icon_url": "https://media.sys.truenas.net/apps/homepage/icons/icon.png"
         },
         "webdav": {
             "app_readme": "<h1>WebDAV</h1>\n<p><a href=\"http://webdav.org/\">WebDAV</a> is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers.</p>\n<blockquote>\n<p>When application is installed and <code>Fix Permissions</code> is selected on at least 1 share\na container will be launched with <strong>root</strong> privileges. This is required in order to apply\nthe correct permissions to the <code>WebDAV</code> shares/directories.\nAfterward, the <code>WebDAV</code> container will run as a <strong>non</strong>-root user (Default: <code>666</code>).\n<code>Chown</code> will only apply if the parent directory does not match the configured user and group.</p>\n</blockquote>",
